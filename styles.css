@@ -185,6 +185,7 @@ HOME SECTION
   align-items: flex-start;
   margin-top: 5rem;
   padding-left: 5rem;
+  width: 70%;
 }
 
 h3 {
@@ -1013,17 +1014,30 @@ MEDIA QUERIES
 **********************************************/
 
 /* MOBILE */
-@media and (max-width: 540px) {
+@media (max-width: 640px) {
   .header-nav {
     width: 100vw; 
   }
+
+.header-nav-social, .header-nav-social a{
+  margin-top: 2.5rem;
+}
+
+.header-nav-social i{
+  margin-left: 1.5rem;
+}
+
+.header-logo {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
 
 .home-content-main {
   display: flex;
   flex-direction:column;
   justify-content: center;
   padding-left: 5rem;
-  padding-right: 3rem;
+  width: 80%;
 }
 
 h3 {
@@ -1076,8 +1090,8 @@ h1 {
   display: flex;
   align-self: center;
   height: 80%;
-  width: 40%;
-  margin:2rem;
+  width: 60%;
+  margin: 2rem 2rem 0 2rem;
 }
 
 .stack {
@@ -1088,7 +1102,7 @@ h1 {
 }
 
 #icon {
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 #edu {
@@ -1160,6 +1174,22 @@ h1 {
   margin: 3rem 2rem 3rem 2rem;
 }
 
+.overlay {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10000;
+  padding: 20px;
+  background-color: #111111;
+  opacity: 0.75;
+  transition: all 0.4s ease;
+}
+
 
 .item-folio__link {
   font-size: 1rem;  
@@ -1174,8 +1204,11 @@ h1 {
 }
 
 .item-folio__info{
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
   text-align: left;
-  margin: 4rem 2rem 3rem 2rem;
 }
 
 
@@ -1240,6 +1273,29 @@ textarea, #message {
 #form-btn {
   width: 100%;
 }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2.5rem;
+  background-color: rgba(0,0,0,0.3);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-top: 3rem;
+}
+
 
 }
 
