@@ -1014,7 +1014,7 @@ MEDIA QUERIES
 **********************************************/
 
 /* MOBILE */
-@media (max-width: 500px) {
+@media screen and (max-device-width: 760px) {
   .header-nav {
     width: 100vw; 
   }
