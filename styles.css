@@ -1013,7 +1013,7 @@ MEDIA QUERIES
 **********************************************/
 
 /* MOBILE */
-@media and (max-width: 640px) {
+@media and (max-width: 760px) {
   .header-nav {
     width: 100vw; 
   }
