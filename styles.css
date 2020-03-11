@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -124,16 +123,6 @@ background: linear-gradient(to top, #240b36, #c31432); /* W3C, IE 10+/ Edge, Fir
 #nav-link a:hover {
   background-color: rgba(255,255,255,0.8);
   color: #c31432;
-}
-
-#nav-text {
-  display: block;
-  position: relative;
-  font-family: "Lora", serif;
-  font-size: 1rem;
-  text-align: right;
-  margin-right: 3rem;
-  margin-top: 2rem;
 }
 
 .header-nav-social, .header-nav-social a{
@@ -1014,23 +1003,35 @@ MEDIA QUERIES
 **********************************************/
 
 /* MOBILE */
-@media screen and (max-device-width: 760px) {
-  .header-nav {
-    width: 100vw; 
-  }
+@media (max-width: 640px) {
+  .header-nav-icon, .header-menu-icon {
+  font-size: 3rem;
+}
+
+.header-nav {
+  width: 100vw;
+  text-align: center;
+}
+
+.header-nav-links {
+  padding: 2rem;
+}
+
+#nav-link, #nav-link a {
+  padding: 3rem;
+  font-size: 3rem;
+}
+
 
 .header-nav-social, .header-nav-social a{
-  margin-top: 2.5rem;
+  text-align: bottom;
+
 }
 
 .header-nav-social i{
-  margin-left: 1.5rem;
+  font-size:3rem;
 }
 
-.header-logo {
-  margin-left: 1rem;
-  font-size: 1.5rem;
-}
 
 .home-content-main {
   display: flex;
@@ -1038,19 +1039,11 @@ MEDIA QUERIES
   justify-content: center;
   padding-left: 5rem;
   width: 80%;
+  height: 100%;
 }
 
-h3 {
-    font-size: 0.8rem;
-}
-
-h1 {
-  font-size: 2rem;
-}
 
 .home-content-buttons {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -1067,23 +1060,31 @@ h1 {
 .home-content-scroll {
   display: none;
 }
+#edu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-intro h1 {
+  font-size: 2rem;
+}
+
+.about-intro {
+  margin-top: 5rem;
+}
 
 .about-more {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  justify-content: center;
 }
 
 .about-more p {
-  margin: 2rem 3rem 2rem 3rem;
-  text-align: center;
-  letter-spacing: 1.75px;
-  line-height: 1.5;
   font-size: 1.2rem;
-  color: #111;
-  font-weight: 700;
+  margin: 2rem;
 }
 
 #selfie {
@@ -1091,7 +1092,7 @@ h1 {
   align-self: center;
   height: 80%;
   width: 60%;
-  margin: 2rem 2rem 0 2rem;
+  margin: 3rem 3rem 0 3rem;
 }
 
 .stack {
@@ -1103,6 +1104,16 @@ h1 {
 
 #icon {
   padding: 2rem;
+}
+
+#icon i {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+#icon h3 {
+  font-size: 1.5rem;
 }
 
 #edu {
@@ -1128,14 +1139,14 @@ h1 {
 
 
 #slider-wrapper {
-  width: 360px;
-  height: 240px;
+  width: 480px;
+  height: 320px;
   margin: 3rem;
 }
 
 .inner-wrapper {
-  width: 360px;
-  height: 240px;
+  width: 480px;
+  height: 320px;
 }
 
 .contact-info .fab {
@@ -1154,12 +1165,12 @@ h1 {
 }
 
 .works-header {
-  margin: 5rem;
+  padding-top: 5rem;
   text-align: center;
 }
 
 #works-title {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 #works-text {
@@ -1190,24 +1201,16 @@ h1 {
   transition: all 0.4s ease;
 }
 
-
-.item-folio__link {
-  font-size: 1rem;  
+.item-folio {
+  margin: 2rem;
 }
 
-.item-folio__link i {
-  font-size: 0.8rem;
-}
-
-.item-folio__link:hover {
-  font-size: 1rem;
-}
 
 .item-folio__info{
   display: block;
   position: absolute;
-  bottom: 5px;
-  left: 5px;
+  bottom: 1rem;
+  left: 1rem;
   text-align: left;
 }
 
@@ -1258,7 +1261,7 @@ input {
   background: transparent;
   border: none;
   letter-spacing: 2px;
-  font-size: .6rem;
+  font-size: .8rem;
   line-height: 2rem;
   padding-bottom: 0.7rem;
 }
@@ -1283,101 +1286,7 @@ textarea, #message {
   background-color: rgba(0,0,0,0.3);
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
-.footer-logo {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-
-}
-
-/* TABLET */
-/*
-@media screen and (max-width: 960px) {
-  .contact-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-field {
-    width: 100%;
-  }
-  
-  #form-btn {
-    width: 100%;
-  }
-  
-  #form-title {
-    margin: 3rem auto;
-  }
-  
-  .contact-header{
-    margin: 5rem 5rem 3rem 5rem;
-  }
-  
-  #co-title {
-    font-size: 1rem;
-  }
-  
-  #co-text {
-    font-size: 2.5rem;
-  }
-  
-  .contact-form {
-    padding: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .form-field {
-    width: 125%;
-  }
-  
-  #form-title {
-    margin: 3rem auto;
-  }
-  
-  #form-btn {
-    width: 125%;
-  }
-  
-  .contact-header{
-    margin: 7rem 7rem 3rem 7rem;
-  }
-  
-  .contact-info {
-    padding: 5rem;
-  }
-  
-  #co-title {
-    font-size: 1rem;
-  }
-  
-  #co-text {
-    font-size: 2.5rem;
-  }
-  
-  .contact-form {
-    padding: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 1460px) {
-  .form-field {
-    width: 200%;
-  }
-  
-  #form-btn {
-    width: 200%;
-  }
 }
 
 
