@@ -417,10 +417,9 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-  $("#menu").hover(function(){
-    $("#nav", this).slideDown(400);
-  }, function(){
-    $("#nav", this).stop().slideUp(400);
+  $( "#menu" ).click(function() {
+    $( "#nav" ).slideToggle( "slow", function() {
+   });
   });
 })
 
