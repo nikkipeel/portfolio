@@ -86,8 +86,6 @@ HEADER
   transition: all 0.5s ease-in-out 0s;
 }
 
-
-
 .header-nav {
   display: block;
   position: absolute;
@@ -157,14 +155,25 @@ background: linear-gradient(to top, #240b36, #c31432); /* W3C, IE 10+/ Edge, Fir
 }
 
 /* MEDIA QUERIES */
-/*
+@media screen and (max-device-width: 480px) {
 .header-nav-icon, .header-menu-icon {
   font-size: 3rem;
+}
+
+.header-menu-text{
+  top: 3rem;
+  right: 6rem;
+  font-size: 1rem;
 }
 
 .header-nav {
   width: auto;
   text-align: center;
+}
+
+.header-nav {
+  width: 100vw;
+  height: 100vh;
 }
 
 .header-nav-links {
@@ -177,16 +186,15 @@ background: linear-gradient(to top, #240b36, #c31432); /* W3C, IE 10+/ Edge, Fir
 }
 
 
-.header-nav-social, .header-nav-social a{
-  text-align: bottom;
-
+.header-nav-social, .header-nav-social {
+  justify-content: center;
 }
 
 .header-nav-social i{
   font-size:3rem;
 }
 
-
+}
 /******************************************************
 *******************************************************
 
@@ -223,7 +231,7 @@ h3 {
 }
 
 h1 {
-  margin-top: 1.5rem;
+  margin: 2rem 2rem 2rem 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 3rem;
@@ -341,7 +349,7 @@ color: linear-gradient(to right, #240b36, #c31432);
 }
 
 /* MEDIA QUERIES */
-/*
+@media screen and (max-device-width: 480px) {
 .home-content-main {
   display: flex;
   flex-direction:column;
@@ -349,6 +357,11 @@ color: linear-gradient(to right, #240b36, #c31432);
   padding-left: 5rem;
   width: auto;
   height: 100%;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
 
@@ -370,7 +383,7 @@ color: linear-gradient(to right, #240b36, #c31432);
   display: none;
 }
 
-
+}
 /******************************************************
 *******************************************************
 
@@ -409,12 +422,12 @@ h3 {
   font-weight: 700;
 }
 
-h1 {
+.about h1 {
   margin-top: 10px;
   font-size: 3rem;
   color: #fff;
   margin-bottom: 3rem;
-}
+} 
 
 span {
   border-bottom: 2px solid #666;
@@ -471,13 +484,22 @@ span {
 }
 
 /* MEDIA QUERIES */
-/*
+@media screen and (max-device-width: 480px) {
 .about-intro h1 {
   font-size: 2rem;
 }
 
 .about-intro {
   margin-top: 5rem;
+}
+
+.about span {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  border: 0.8px solid #1f1f1f;
+  background-color: #1f1f1f;
+  margin-bottom: 3rem;
 }
 
 .about-more {
@@ -488,8 +510,8 @@ span {
 }
 
 .about-more p {
-  font-size: 1.2rem;
-  margin: 2rem;
+  font-size: 2rem;
+  margin: 3rem;
 }
 
 #selfie {
@@ -521,7 +543,7 @@ span {
   font-size: 1.5rem;
 }
 
-
+}
 /******************************************************
 *******************************************************
 
@@ -563,18 +585,6 @@ EDU SECTION
   padding-bottom: 1rem;
 }
 
-#edu p {
-  font-family: 'Lora', serif;
-  margin: 3rem 10rem 3rem 10rem;
-  text-align: center;
-  letter-spacing: 1.75px;
-  line-height: 1.5;
-  font-size: 1.4rem;
-  color: #111;
-  opacity: 0.8;
-  font-weight: 700;
-}
-
 #edu span {
   display: inline-block;
   position: relative;
@@ -582,6 +592,18 @@ EDU SECTION
   border: 0.8px solid #1f1f1f;
   background-color: #1f1f1f;
   margin-bottom: 4rem;
+}
+
+.edu-more {
+  font-family: 'Lora', serif;
+  margin: 3rem 10rem 3rem 10rem;
+  text-align: center;
+  letter-spacing: 1.75px;
+  line-height: 1.5;
+  font-size: 2rem;
+  color: #111;
+  opacity: 0.8;
+  font-weight: 700;
 }
 
 /*.certs {
@@ -610,7 +632,7 @@ EDU SECTION
     height: 480px;
     width: 80%;
     max-width: 600px;
-    margin: 7.5rem auto;
+    margin: 5rem auto;
 }
 
 
@@ -739,9 +761,29 @@ EDU SECTION
     }    
 } 
 
-@media all and (max-width: 485px) {
-    
+@media screen and (max-device-width: 480px) {
+    #edu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
+    .edu-text {
+      font-size: 2rem;
+    }
+
+    .edu-more {
+      font-size: 2rem;
+      margin: 3rem;
+    }
+
+    .edu-header {
+      margin-top: 5rem;
+    }
+}
+
+@media all and (max-width: 480px) {
     .carousel {
         height: 150px;
         max-width: 350px;
@@ -753,27 +795,6 @@ EDU SECTION
 } 
 
 @media all and (max-width: 400px) {
-    #edu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.edu-text {
-  font-size: 2rem;
-}
-
-
-#edu p {
-  font-size: 1.2rem;
-  margin: 2rem;
-}
-
-.edu-header {
-  margin-top: 5rem;
-} 
-
     .carousel {
         height: 120px;
         max-width: 300px;
@@ -930,7 +951,8 @@ WORKS SECTION
 }
 
 /* MEDIA QUERIES */
-/*
+
+@media screen and (max-device-width: 480px) {
 .intro-wrap {
   display: flex;
   flex-direction: column;
@@ -940,7 +962,7 @@ WORKS SECTION
 }
 
 .works-header {
-  padding-top: 5rem;
+  padding: 3rem;
   text-align: center;
 }
 
@@ -1175,40 +1197,19 @@ textarea, #message {
  
 } 
 
-@media all and (max-width: 600px) {
-  .contact-info .fab {
-  font-size: 1.75rem;
-  line-height: 3rem;
-  padding-left: 1rem;
-}
 
-.contact-header {
-  margin: 5rem 2rem 3rem 2rem;
-}
-
-#co-title {
-  font-size: 0.8rem;
-}
-
-#co-text {
-  font-size: 2rem;
-}
+@media screen and (max-device-width: 480px) {
 
 .contact-content {
   display: flex;
   flex-direction: column;
-  height: auto;
-  width: 80%;
-}
-
-.contact-form {
-  padding: 2rem;
 }
 
 #form-title {
-  margin: 2rem;
   text-align: center;
+  font-size: 0.8rem;
 }
+
 
 input {
   text-decoration: none;
@@ -1216,51 +1217,22 @@ input {
 }
 
 .form-field {
-  cursor: pointer;
   width: 100%;
 }
-
 
 #name, #email, #subject, #message {
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  outline: none;
-  background: transparent;
-  border: none;
-  letter-spacing: 2px;
-  font-size: .8rem;
-  line-height: 2rem;
-  padding-bottom: 0.7rem;
-}
-
-
-textarea, #message {
-  width: 100%;
-  color: #fff;
-  overflow: visible;
+  font-size: .7rem;
 }
 
 #form-btn {
+  font-size: 0.8rem;
+  font-weight: 400;
   width: 100%;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 2.5rem;
-  background-color: rgba(0,0,0,0.3);
-}
 } 
 
-@media all and (max-width: 485px) {
-    
-} 
 
-@media all and (max-width: 400px) {
-   
-} 
 
 
 
@@ -1357,6 +1329,4 @@ color: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefo
   line-height: 2.5;
   border-bottom: 2px solid #c31432;
 }
-
-
 
