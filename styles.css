@@ -753,26 +753,6 @@ EDU SECTION
 } 
 
 @media all and (max-width: 400px) {
-    #edu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.edu-text {
-  font-size: 2rem;
-}
-
-
-#edu p {
-  font-size: 1.2rem;
-  margin: 2rem;
-}
-
-.edu-header {
-  margin-top: 5rem;
-} 
 
     .carousel {
         height: 120px;
