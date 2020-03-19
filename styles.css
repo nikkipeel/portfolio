@@ -157,7 +157,7 @@ background: linear-gradient(to top, #240b36, #c31432); /* W3C, IE 10+/ Edge, Fir
 }
 
 /* MEDIA QUERIES */
-
+/*
 .header-nav-icon, .header-menu-icon {
   font-size: 3rem;
 }
@@ -471,7 +471,7 @@ span {
 }
 
 /* MEDIA QUERIES */
-
+/*
 .about-intro h1 {
   font-size: 2rem;
 }
@@ -645,7 +645,7 @@ EDU SECTION
 }
 
 .carousel__slide {
-    position: absolute; /* stack images on top of each other */
+    position: absolute; 
     top: 0;
     bottom: 0;
     height: 400px;
@@ -668,7 +668,7 @@ EDU SECTION
 
 
 .carousel__button--left {
-    left: -5rem; /* position away from image */
+    left: -5rem; 
 }
 
 .carousel__button--right {
@@ -753,6 +753,26 @@ EDU SECTION
 } 
 
 @media all and (max-width: 400px) {
+    #edu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-text {
+  font-size: 2rem;
+}
+
+
+#edu p {
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+.edu-header {
+  margin-top: 5rem;
+} 
 
     .carousel {
         height: 120px;
@@ -1147,6 +1167,7 @@ textarea, #message {
 }
 
 /* MEDIA QUERIES */
+/*
 .contact-info .fab {
   font-size: 1.75rem;
   line-height: 3rem;
@@ -1318,5 +1339,6 @@ color: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefo
   line-height: 2.5;
   border-bottom: 2px solid #c31432;
 }
+
 
 
