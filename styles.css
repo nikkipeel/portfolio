@@ -1038,7 +1038,7 @@ MEDIA QUERIES
   flex-direction:column;
   justify-content: center;
   padding-left: 5rem;
-  width: 80%;
+  width: auto;
   height: 100%;
 }
 
