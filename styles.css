@@ -341,7 +341,7 @@ color: linear-gradient(to right, #240b36, #c31432);
 }
 
 /* MEDIA QUERIES */
-
+/*
 .home-content-main {
   display: flex;
   flex-direction:column;
