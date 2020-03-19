@@ -1167,8 +1167,16 @@ textarea, #message {
 }
 
 /* MEDIA QUERIES */
-/*
-.contact-info .fab {
+@media all and (max-width: 900px) {
+
+} 
+
+@media all and (max-width: 720px) {
+ 
+} 
+
+@media all and (max-width: 600px) {
+  .contact-info .fab {
   font-size: 1.75rem;
   line-height: 3rem;
   padding-left: 1rem;
@@ -1244,6 +1252,16 @@ textarea, #message {
   padding: 2.5rem;
   background-color: rgba(0,0,0,0.3);
 }
+} 
+
+@media all and (max-width: 485px) {
+    
+} 
+
+@media all and (max-width: 400px) {
+   
+} 
+
 
 
 /******************************************************
