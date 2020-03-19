@@ -1009,7 +1009,7 @@ MEDIA QUERIES
 }
 
 .header-nav {
-  width: 100vw;
+  width: auto;
   text-align: center;
 }
 
