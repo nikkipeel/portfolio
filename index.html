@@ -112,6 +112,41 @@
     <p>I love tutorials, codealongs, and bootcamps! I've completed numerous courses in Web Design offered by Codecademy, Udemy, Udacity, FreeCodeCamp, and more. I'm also familiar with Python, Java, and Android App development. Here are a few of the recent certifications I've earned: </p>
   </div>
 
+  <div class="carousel">
+        <button class="carousel__button carousel__button--left"> 
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Chevron_left.svg/768px-Chevron_left.svg.png">
+        </button>
+          <!-- __ means child-->
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="https://i.imgur.com/0ZTlfG1.jpg" alt="Image 1">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="https://i.imgur.com/04Mqx2E.jpg" alt="Image 2">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="https://i.imgur.com/RS0DkPr.jpg" alt="Image 3">
+                </li>
+                 <li class="carousel__slide">
+                    <img class="carousel__image" src="https://i.imgur.com/HgQLKWJ.png" alt="Image 4">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right"> <!-- -- means modifier-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Chevron_right.svg/1024px-Chevron_right.svg.png" alt="right icon">
+        </button>
+
+        <div class="carousel__nav">  
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </div>
+
+
+<!-- original slider without chevron indicators
   <div id="slider-wrapper">
   <div class="inner-wrapper">
     <input checked type="radio" name="slide" class="control" id="Slide1" />
@@ -129,8 +164,11 @@
       <a class="slide" href="https://www.udemy.com/course/modern-react-bootcamp/" target="_blank"><img src="https://i.imgur.com/0ZTlfG1.jpg" /></a>
   </div>
 </div>
-</div>
-  <!--<div class="certs">
+</div> 
+
+
+<!-- original side by side certs with zoom on hover
+  <div class="certs">
     <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank" alt="link to course">
       <img id="cert"src="https://i.imgur.com/04Mqx2E.jpg">
     </a>
@@ -148,51 +186,7 @@
 </section>
 
   
-  <!--include description of course/courses -->
- <!-- <section class="courses">
-     <span id="c-span"></span>
-    <div class="courses-content">
-      <div id="slider-wrapper">
-        <div class="inner-wrapper">
-          <input checked type="radio" name="slide" class="control" id="Slide1" />
-          <label for="Slide1" id="s1"></label>
-          <input type="radio" name="slide" class="control" id="Slide2" />
-          <label for="Slide2" id="s2"></label>
-          <input type="radio" name="slide" class="control" id="Slide3" />
-          <label for="Slide3" id="s3"></label>
-          <input type="radio" name="slide" class="control" id="Slide4" />
-          <label for="Slide4" id="s4"></label>
-          <div class="overflow-wrapper">
-            <div class="slide" href="" target="_blank">
-              <img id="c-img" src="" alt="Preview photo of course">
-              <p id="c-title">Course title</p>
-              <p id="c-cat">Category</p>
-              <p id="c-text">This is where I will place information about a specific course or program that I've studied with. Such as: Udemy, FreeCodeCamp, Codecademy, Google Codelabs, Udacity and more.</p>
-            </div>
-            <div class="slide" href="" target="_blank">
-                <img id="c-img" src="" alt="Preview photo of course">
-                <h4>Course title</h4>
-                <em>Category</em>
-                <p>This is where I will place information about a specific course or program that I've studied with. Such as: Udemy, FreeCodeCamp, Codecademy, Google Codelabs, Udacity and more.</p>
-            </div>
-            <div class="slide" href="" target="_blank">
-                <img id="c-img" src="" alt="Preview photo of course">
-                <p id="c-title">Course title</p>
-                <p id="c-cat">Category</p>
-                <p id="c-text">This is where I will place information about a specific course or program that I've studied with. Such as: Udemy, FreeCodeCamp, Codecademy, Google Codelabs, Udacity and more.</p>
-            </div>
-            <div class="slide" href="" target="_blank">
-              <img id="c-img" src="" alt="Preview photo of course">
-              <p id="c-title">Course title</p>
-              <p id="c-cat">Category</p>
-              <p id="c-text">This is where I will place information about a specific course or program that I've studied with. Such as: Udemy, FreeCodeCamp, Codecademy, Google Codelabs, Udacity and more.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> 
-  </div>
-</section> -->
+  
 
 <section class="works" id="works">
   <div class="intro-wrap">
@@ -344,6 +338,32 @@
         </div>
       </div> 
     </div>
+    <!-- -->
+    <div class="item-folio">
+      <img src="https://i.imgur.com/HauL5ZH.png" alt="Tetris app homepage">
+      <div class="overlay">
+        <a href="https://nikkipeel.github.io/react-tetris/" target="_blank" class="item-folio__link">
+          <i class="fas fa-link"></i>
+        </a>
+        <div class="item-folio__info">
+          <h3 class="item-folio__title">Tetris</h3>
+          <p class="item-folio__cat">React, React-Router</p>
+        </div>
+      </div> 
+    </div>
+
+    <div class="item-folio">
+      <img src="https://i.imgur.com/u6y5gPj.png" alt="Warbler homepage">
+      <div class="overlay">
+        <a href="https://warbler-client-np.herokuapp.com/" target="_blank" class="item-folio__link">
+          <i class="fas fa-link"></i>
+        </a>
+        <div class="item-folio__info">
+          <h3 class="item-folio__title">Warbler</h3>
+          <p class="item-folio__cat">React, React-Router</p>
+        </div>
+      </div> 
+    </div>
 
 
   </div>
@@ -415,6 +435,8 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+
+
 <script type="text/javascript">
 $(document).ready(function(){
   $( "#menu" ).click(function() {
@@ -423,8 +445,131 @@ $(document).ready(function(){
   });
 })
 
-
 </script>
+
+<script>
+
+const track = document.querySelector('.carousel__track');  // select the ul
+const slides = Array.from(track.children);
+const slidesLength = slides.length; // get length of array (number of images)
+var counter = 0; // check postion in slides 
+const nextButton = document.querySelector('.carousel__button--right');
+const prevButton = document.querySelector('.carousel__button--left');
+const dotsNav = document.querySelector('.carousel__nav');
+const dots = Array.from(dotsNav.children);
+const slideWidth= slides[0].getBoundingClientRect().width; // 
+
+const totalWidth = slideWidth * (slidesLength -1) + 'px'; // 
+const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px'; 
+}
+
+slides.forEach(setSlidePosition); 
+
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')'; // shift ul
+    currentSlide.classList.remove('current-slide'); // remove .current-slide CSS on current slide
+    targetSlide.classList.add('current-slide'); // add .current-slide CSS on next slide 
+}
+
+const updateDots = (currentDot, targetDot) => {
+    currentDot.classList.remove('current-slide');
+    targetDot.classList.add('current-slide');
+}
+
+// When prev clicked, move to slide on the left
+prevButton.addEventListener('click', e => {
+    counter --; // decr counter (for checking slide pos)
+    const currentSlide = track.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const prevDot = currentDot.previousElementSibling;
+
+    // if prev clicked when on the first slide 
+    if ((counter) == -1) {
+        const lastSlide = slides[slidesLength - 1];
+        const lastDot = dots[slidesLength - 1];
+        counter = slidesLength - 1;  // set counter to last slide index
+        track.style.transform = 'translateX(-' + totalWidth + ')'; // shift ul to the last slide
+        currentSlide.classList.remove('current-slide'); // remove .current-slide CSS on current slide
+        lastSlide.classList.add('current-slide'); // add .current-slide CSS on the last slide
+        currentDot.classList.remove('current-slide');
+        lastDot.classList.add('current-slide');
+        
+        slideResize(); // call resize function (shifts track correctly)
+
+    } else {
+        // not the first slide
+        moveToSlide(track, currentSlide, prevSlide);
+        updateDots(currentDot, prevDot);
+    }
+});
+
+
+// When next clicked, move to slide on the right
+nextButton.addEventListener('click', e => {  // track the event (click)
+    counter ++; // incr counter for tracking index pos
+    const currentSlide = track.querySelector('.current-slide');  
+    const nextSlide = currentSlide.nextElementSibling;
+    const currentDot = dotsNav.querySelector('.current-slide')
+    const nextDot = currentDot.nextElementSibling;
+
+    // if the next button is clicked when the current-slide is the last slide...
+    if ((counter) == slidesLength) {
+        const firstSlide = slides[0];
+        const firstDot = dots[0];
+        counter = 0;
+        track.style.transform = 'translateX(-' + 0 + 'px' + ')'; // shift ul to first slide
+        currentSlide.classList.remove('current-slide'); // remove .current-slide CSS on current slide
+        firstSlide.classList.add('current-slide'); // add .current-slide CSS on the first slide
+
+        currentDot.classList.remove('current-slide');
+        firstDot.classList.add('current-slide');
+
+    } else {
+        // not the last slide...
+        moveToSlide(track, currentSlide, nextSlide);
+        updateDots(currentDot, nextDot);
+    }
+})
+
+// When I click the nav indicators, move to that slide
+dotsNav.addEventListener('click', e => {
+    // which indicator was clicked on?
+    const targetDot = e.target.closest('button'); // prevents event when carousel__nav clicked (not near carousel__nav buttons)
+    if (!targetDot) return; // if !targetDot... exit function
+
+    const currentSlide = track.querySelector('.current-slide');
+    const currentDot  = dotsNav.querySelector('.current-slide');
+    const targetIndex = dots.findIndex(dot => dot === targetDot); // get index of dot clicked on
+    counter = targetIndex;
+    const targetSlide = slides[targetIndex];
+
+    moveToSlide(track, currentSlide, targetSlide);
+    updateDots(currentDot, targetDot);
+})
+
+
+// when window is resized --> get new carousel slide length and total width then reset track pos so that only the current slide is seen
+window.addEventListener('resize', slideResize);
+
+function slideResize(){
+    var newSlideWidth = slides[0].getBoundingClientRect().width; // get size of the first slide (same for all slides),  get only width of the first slide
+    var totalWidth = slideWidth * (slidesLength - 1) + 'px'; // get total length of all slides next to each other
+    // arrange the slides next to one another
+    // make a function
+    const setSlidePosition = (slide, index) => { // reset slide positions for new window size
+        slide.style.left = newSlideWidth * index + 'px';  // change style --> move slide from the left (shift from absolute pos.)
+    }
+    
+    slides.forEach(setSlidePosition); // call function for each slide
+    
+    const currentSlide = track.querySelector('.current-slide');
+    var currentIndex = slides.indexOf(currentSlide);
+    var currentTrackPos = newSlideWidth * currentIndex + 'px';
+    track.style.transform = 'translateX(-' + currentTrackPos + ')'; // shift ul
+}    </script>
+
 </body>
 
 </html>
