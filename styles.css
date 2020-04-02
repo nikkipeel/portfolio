@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-      background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("https://i.imgur.com/hE1Orpl.jpg")no-repeat;
+  background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(images/nebula.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -33,9 +33,7 @@ body {
 
 /******************************************************
 *******************************************************
-
 HEADER 
-
 *******************************************************
 ******************************************************/
 .header {
@@ -197,9 +195,7 @@ background: linear-gradient(to top, #240b36, #c31432); /* W3C, IE 10+/ Edge, Fir
 }
 /******************************************************
 *******************************************************
-
 HOME SECTION 
-
 *******************************************************
 ******************************************************/
 .home {
@@ -306,48 +302,6 @@ color: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefo
 }
 
 
-.home-content-scroll {
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  color: #fff;
-  position: absolute;
-  top: 120vh;
-  bottom: 0;
-  text-align: right;
-  padding-right: 1rem;
-  right: 2rem;  
-  border-right: 2px solid #fff;
-  height: 250px;
-}
-
-.home-content-scroll a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.75rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  letter-spacing: .2rem;
-  transition: all .2s ease;
-}
-
-
-.home-content-scroll a:hover, #scroll:hover {
-  font-size: 0.8rem;
-  font-weight: 700;
-   color: #c31432;  
-color: -webkit-linear-gradient(to right, #240b36, #c31432); 
-color: linear-gradient(to right, #240b36, #c31432);
-}
-
-
-
-#scroll {
-  font-size: 1rem;
-  margin-right: 15px;
-  margin-bottom: 5rem;
-}
-
 /* MEDIA QUERIES */
 @media screen and (max-device-width: 480px) {
 .home-content-main {
@@ -386,9 +340,7 @@ h1 {
 }
 /******************************************************
 *******************************************************
-
 ABOUT SECTION
-
 *******************************************************
 ******************************************************/
 
@@ -546,9 +498,7 @@ span {
 }
 /******************************************************
 *******************************************************
-
 EDU SECTION
-
 *******************************************************
 ******************************************************/
 
@@ -610,19 +560,16 @@ EDU SECTION
   display: flex;
   justify-content: center;
 }
-
 .certs img {
   margin-right: 2rem;
   height: 240px;
   width: auto;
 }
-
 #cert {
   cursor: pointer;
   box-shadow: 2px 2px 2px 2px #111111;
   transition: transform .3s ease;
 }
-
 #cert:hover {
   transform: scale(1.5);
 } */
@@ -693,8 +640,18 @@ EDU SECTION
     left: -5rem; 
 }
 
+.carousel__button--left i {
+    font-size: 2.5rem;
+    color: rgba(0,0,0,0.7);
+}
+
 .carousel__button--right {
     right: -5rem;
+}
+
+.carousel__button--right i {
+    font-size: 2.5rem;
+    color: rgba(0,0,0,0.7);
 }
 
 .carousel__button img {
@@ -811,9 +768,7 @@ EDU SECTION
 
 /******************************************************
 *******************************************************
-
 WORKS SECTION
-
 *******************************************************
 ******************************************************/
 
@@ -912,22 +867,36 @@ WORKS SECTION
 }
 
 .item-folio__link {
-  font-size: 1.2rem;  
+  /*font-size: 1.2rem;  
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid white;*/
   transition: all 0.4s ease;
 }
 
 .item-folio__link i {
+  border-radius: 50%;
+  border: 2px solid white;
   text-align: center;
   padding: 7px;
   font-size: 1rem;
 }
 
-.item-folio__link:hover {
+.item-folio__link:hover i {
   font-size: 1.2rem;
   color: #c31432;
   border: 3px solid #c31432;
+}
+
+.item-folio__link p {
+  display: none;
+}
+
+.item-folio__link:hover p {
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: flex-start;
+  margin-top: 10px;
+  color: #cdcdcd;
 }
 
 .item-folio__info{
@@ -1015,9 +984,7 @@ WORKS SECTION
 
 /******************************************************
 *******************************************************
-
 CONTACT FORM
-
 *******************************************************
 ******************************************************/
 
@@ -1238,9 +1205,7 @@ input {
 
 /******************************************************
 *******************************************************
-
 FOOTER
-
 *******************************************************
 ******************************************************/
 
@@ -1329,4 +1294,3 @@ color: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefo
   line-height: 2.5;
   border-bottom: 2px solid #c31432;
 }
-
