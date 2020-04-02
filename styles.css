@@ -883,11 +883,11 @@ WORKS SECTION
 }
 
 
-.overlay .seemore {
+.seemore {
   display: none;
 }
 
-.overlay:hover .seemore {
+.overlay .seemore {
   display: flex;
   font-size: 0.8rem;
   letter-spacing: 1.2;
