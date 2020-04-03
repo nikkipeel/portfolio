@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link href="https://fonts.googleapis.com/css?family=Lora|Playfair+Display+SC:700|Montserrat:200,300,400&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="styles.css">
@@ -22,7 +24,7 @@
   <div class="container">
   <header class="header">
     <div class="header-logo">
-      <a>Nikki Peel</a>
+      <a href="resume0320.pdf" alt="Nikki Peel resume" target="_blank"  rel="noreferrer" >Nikki Peel</a>
     </div>  
       <div class="header-menu-toggle" id="menu">
             <a class="header-menu-text">Menu</a>
@@ -83,22 +85,21 @@
     </div>
 
     <div class="about-more" id="about">
-      <p>I'm a Junior Web Developer seeking remote opportunities and freelance web projects. I love creating responsive websites and PWAs. I'm very familiar with HTML and CSS; including CSS Grid, Flexbox, form validation, and Sass. 
+      <p>I'm a Junior Web Developer seeking remote opportunities and freelance web projects. I love creating responsive websites and PWAs. I'm very familiar with HTML, Javascript and CSS; including CSS Grid, Flexbox, form validation, and Sass. 
       <br>
-      On a regular day, I can be found experimenting on Codepen, learning with Udemy or FreeCodeCamp, or publishing code snippets to Github Pages. I'm also experienced with utilizing Front End Frameworks and Libraries such as ReactJS, Bootstrap, jQuery, and more. 
+      On a regular day, I can be found experimenting on Codepen, learning with Udemy or FreeCodeCamp, or publishing code snippets to Github Pages. I'm also experienced with utilizing Front End Frameworks and Libraries such as ReactJS, Bootstrap, jQuery, and more.
+      </p>
 
-     </p>
-
-        <img id="selfie" src="images/selfie.jpg" alt="Portrait image">
-
+      <img id="selfie" src="images/selfie.jpg" alt="Portrait image">
     </div>
+
     <div class="stack">
       <a id="icon"><i class="fab fa-html5"></i><h3>HTML5</h3></a>
         <a id="icon"><i class="fab fa-css3"></i><h3>CSS3</h3></a>
         <a id="icon"><i class="fab fa-sass"></i><h3>Sass</h3></a>
         <a id="icon"><i class="fab fa-bootstrap"></i><h3>Bootstrap</h3></a>
         <a id="icon"><i class="fab fa-react"></i><h3>ReactJS</h3></a>
-      <a id="icon"><i class="fab fa-node"></i><h3>NodeJS</h3></a>
+        <a id="icon"><i class="fab fa-node"></i><h3>NodeJS</h3></a>
     </div>
   </section>
 
@@ -405,20 +406,28 @@
     <form action="mailto:npeel3497@gmail.com" method="post" enctype="text/plain">
       <fieldset>
         <div class="form-field">
-          <input name="name" type="text" id="name" placeholder="Your Name"></input>
-  
+          <label for="name">
+            Your Name
+            <input name="name" type="text" id="name"/>
+          </label>
         </div>
       <div class="form-field">
-
-          <input name="email" type="email" id="email" placeholder="Your Email"></input>
-
+        <label for="email">Your Email
+          <input name="email" type="email" id="email" />
+        </label>
       </div>
       <div class="form-field">
-          <input name="Subject" type="text" id="subject" placeholder="Subject"></input>
+        <label for="subject">
+          Subject
+          <input name="Subject" type="text" id="subject" />
+        </label>
         </div>
-    <div class="form-field">
-          <textarea name="message" type="text" id="message" placeholder="Your Message"></textarea>
-        </div>
+      <div class="form-field">
+        <label for="message">
+          Your Message
+          <textarea name="message" type="text" id="message"></textarea>
+        </label>
+      </div>
       </fieldset>
     <input type="submit" value="send" id="form-btn">
     </form>
@@ -445,6 +454,10 @@
         </a>
       </div>
       Junior Full Stack Web Developer <br> 
+      <div class="resume">
+        <i class="fas fa-file-download"></i>
+        <a href="resume0320.pdf" id="resume-link" alt="Nikki Peel resume" target="_blank"  rel="noreferrer" >resume</a>
+      </div>
     </div>
     <div class="footer-follow">
       <h4 id="follow">Follow Me</h4>
